@@ -42,12 +42,13 @@
 /* LANDING GROUP */
 /* ------------------------------------ */
 
+.landingWrapper {}
 
 .landingContainer {
     position: relative;
     height: 40rem;
     width: 100%;
-    /* border: 1px solid red; */
+    /* height: 100%; */
 }
 
 .landingBackground {
@@ -55,7 +56,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: 0;
+    z-index: -1;
     position: absolute;
     z-index: 0;
     opacity: .5;
@@ -156,7 +157,7 @@
 /* ------------------------------------ */
 
 .aboutContainer {
-    height: 28rem;
+    /* height: 28rem; */
     padding: 1rem;
     padding-top: 1.75rem;
     /* padding-bottom: 2rem; */
@@ -243,9 +244,11 @@
 
 .prideContainer {
     background-color: #8ED941;
-    height: 50.5rem;
+    /* height: 50.5rem; */
     text-align: center;
-
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 2rem;
     color: black;
 }
 
@@ -263,8 +266,7 @@
 }
 
 .reasonGroupContainer {
-    padding-right: 10%;
-    padding-left: 10%;
+
     margin-bottom: 1.5rem;
 }
 
@@ -285,6 +287,10 @@
     font-size: .8rem;
 }
 
+.pride_buttonWrapper {
+    width: 100%;
+}
+
 
 
 /* --------------------------------- */
@@ -292,11 +298,12 @@
 /* --------------------------------- */
 
 .learnMoreContainer {
-    height: 120rem;
+    /* height: 120rem; */
     /* background-color: red; */
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: "Montserrat"
 }
 
