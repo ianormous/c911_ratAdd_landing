@@ -12,7 +12,8 @@ export default function About() {
             <div className={`${styles.aboutContainer}`}>
                 <div className={styles.about_header}>
                     <span className={styles.about_header_emphasis}>FAST </span>
-                    &gt;&gt;&gt; <br></br>
+                    {/* &gt;&gt;&gt;  */}
+                    <br></br>
                     100% Effective Rat &<br></br>
                     Mouse Solutions
                 </div>
