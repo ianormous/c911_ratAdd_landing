@@ -38,6 +38,7 @@ export default function VideoPlayer({ posterURL, videoURL }) {
                 Your browser does not support the video tag.
             </video>
             <Image
+                alt="video thumbnail. dogs chasing a rat"
                 className={styles.videoPlayButton}
                 ref={videoPlayBtn}
                 onClick={handlePlayBtnClick}
