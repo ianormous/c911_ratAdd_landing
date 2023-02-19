@@ -11,21 +11,12 @@ import playButton from '../../public/playButton.png'
 export default function VideoPlayer({ posterURL, videoURL }) {
     const landingVid = useRef(null)
     const videoPlayBtn = useRef(null)
-
-    //fixes known bug when control=false, autoplay, post....video dissapears. 
-    useEffect(() => {
-
-        landingVid.current.addEventListener("play", () => {
-            if (landingVid.current.getAttribute('controls') !== 'true') {
-                landingVid.current.setAttribute('controls', 'true')
-            }
-            landingVid.current.removeAttribute('controls')
-        })
-    }, [])
+    const videoThumbnail = useRef(null)
 
 
     function handlePlayBtnClick(e) {
         videoPlayBtn.current.style.display = 'none'
+        videoThumbnail.current.style.display = 'none'
         landingVid.current.play()
     }
 
@@ -52,8 +43,16 @@ export default function VideoPlayer({ posterURL, videoURL }) {
                 <source src={videoURL} type="video/mp4"></source>
                 Your browser does not support the video tag.
             </video>
+            {/* thumbnail sits in front to fix bug with poster attrb */}
             <Image
                 alt="video thumbnail. dogs chasing a rat"
+                className={styles.videoThumbnail}
+                ref={videoThumbnail}
+                src={ratThumbnail}
+                onClick={handlePlayBtnClick}
+            />
+            <Image
+                alt=""
                 className={styles.videoPlayButton}
                 ref={videoPlayBtn}
                 onClick={handlePlayBtnClick}
