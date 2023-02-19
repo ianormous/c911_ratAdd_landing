@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image'
 
 import styles from '@/styles/VideoPlayer.module.css'
@@ -9,6 +9,16 @@ import playButton from '../../public/playButton.png'
 export default function VideoPlayer({ posterURL, videoURL }) {
     const landingVid = useRef(null)
     const videoPlayBtn = useRef(null)
+
+    //fixes known bug when control=false, autoplay, post....video dissapears. 
+    useEffect(() => {
+        landingVid.current.addEventListener("play", () => {
+            if (landingVid.current.getAttribute('controls') !== 'true') {
+                landingVid.current.setAttribute('controls', 'true')
+            }
+            landingVid.current.removeAttribute('controls')
+        })
+    }, [])
 
 
     function handlePlayBtnClick(e) {
@@ -24,6 +34,7 @@ export default function VideoPlayer({ posterURL, videoURL }) {
 
     return (
         <div className={styles.videoWrapper}>
+
             <video
                 ref={landingVid}
                 onClick={handleVideoPlayerClick}
@@ -45,6 +56,6 @@ export default function VideoPlayer({ posterURL, videoURL }) {
                 src={playButton}
                 id="playButton"
             />
-        </div>
+        </div >
     )
 }
