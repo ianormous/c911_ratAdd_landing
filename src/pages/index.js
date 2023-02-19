@@ -11,13 +11,13 @@ import ratBackground from '../../public/rat_background.png'
 import logo from '../../public/logo.png'
 
 // RAT RISKS IMGS
-import fireRisk from '/rat_risks/fire_risk.jpg'
-import parasiteRisk from '/rat_risks/parasite_risk.png'
-import structureRisk from '/rat_risks/chewed_pipe.jpg'
-import floodRisk from '/rat_risks/floodRisk.jpg'
-import diseaseRisk from '/rat_risks/diseaseRisk.jpg'
-import judgementRisk from '/rat_risks/judgementRisk.jpg'
-import acRisk from '/rat_risks/acRisk.jpg'
+import fireRisk from '../../public/rat_risks/fire_risk.jpg'
+import parasiteRisk from '../../public/rat_risks/parasite_risk.png'
+import structureRisk from '../../public/rat_risks/chewed_pipe.jpg'
+import floodRisk from '../../public/rat_risks/floodRisk.jpg'
+import diseaseRisk from '../../public/rat_risks/diseaseRisk.jpg'
+import judgementRisk from '../../public/rat_risks/judgementRisk.jpg'
+import acRisk from '../../public/rat_risks/acRisk.jpg'
 
 import styles from '@/styles/Home.module.css'
 
