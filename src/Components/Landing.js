@@ -16,13 +16,13 @@ export default function Landing({
     return (
         <div>
             <div className={styles.landingContainer}>
-                <Image src={background} className={styles.landingBackground}></Image>
+                <Image alt="conniving, menacing background rat" src={background} className={styles.landingBackground}></Image>
 
                 {/* utility content wrapper (a part of the Next Image background fix) */}
                 <div style={{ zIndex: '1', position: 'absolute', height: '100%', width: '100%' }}>
                     {/* logo banner */}
                     <div className={`d-flex justify-content-center ${styles.logoContainer}`}>
-                        <Image src={logo} className={styles.logo}></Image>
+                        <Image alt="critter911 logo" src={logo} className={styles.logo}></Image>
                     </div>
 
                     {/* video group container */}

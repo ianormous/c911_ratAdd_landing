@@ -35,7 +35,7 @@ export default function About() {
 
                 <div className={styles.about_bio}>
                     <div className={styles.happyFamilyWrapper}>
-                        <Image src={happyFamily} className={styles.happyFamily}></Image>
+                        <Image alt="our family" src={happyFamily} className={styles.happyFamily}></Image>
                     </div>
                     Here at Orlando Critter 911 we understand! Nothing is more important to you than the health & safety of your family, home or business... Fact is that providing you with rat a& mouse free peace of mind is what we do best.
                 </div>

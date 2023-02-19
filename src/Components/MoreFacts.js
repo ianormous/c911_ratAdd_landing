@@ -31,13 +31,14 @@ function Fact(props) {
     const {
         img,
         header,
-        body
+        body,
+        alt,
     } = props
 
     return (
         <div className={styles.ratFact}>
             <div className={styles.ratFact_imgWrapper}>
-                <Image src={img} className={styles.ratFact_img} />
+                <Image alt={alt} src={img} className={styles.ratFact_img} />
             </div>
             <span className={styles.ratFact_header} >{header}</span>
             <p>{body}</p>

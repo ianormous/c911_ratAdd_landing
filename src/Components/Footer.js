@@ -9,7 +9,7 @@ export default function Footer() {
     return (
         <div className={`d-flex flex-column align-items-center ${styles.footer}`}>
             <div className={`d-flex justify-content-center ${styles.footer_logoWrapper}`}>
-                <Image src={logoV2} className={styles.footer_logo}></Image>
+                <Image alt="critter911 Logo" src={logoV2} className={styles.footer_logo}></Image>
             </div>
             <ul className={styles.footter_list}>
                 <li className={styles.footer_listItem}><a className={styles.footer_link}>Visit Our Site</a></li>
