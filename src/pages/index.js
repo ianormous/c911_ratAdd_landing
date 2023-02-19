@@ -15,7 +15,7 @@ import fireRisk from '../../public/rat_risks/fire_risk.jpg'
 import parasiteRisk from '../../public/rat_risks/parasite_risk.png'
 import structureRisk from '../../public/rat_risks/chewed_pipe.jpg'
 import floodRisk from '../../public/rat_risks/floodRisk.jpg'
-import diseaseRisk from '../../public/rat_risks/diseaseRisk.jpg'
+import diseaseRisk from '../../public/rat_risks/diseaseRisk.JPG'
 import judgementRisk from '../../public/rat_risks/judgementRisk.jpg'
 import acRisk from '../../public/rat_risks/acRisk.jpg'
 
