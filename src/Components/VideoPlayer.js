@@ -12,6 +12,7 @@ export default function VideoPlayer({ posterURL, videoURL }) {
 
     //fixes known bug when control=false, autoplay, post....video dissapears. 
     useEffect(() => {
+
         landingVid.current.addEventListener("play", () => {
             if (landingVid.current.getAttribute('controls') !== 'true') {
                 landingVid.current.setAttribute('controls', 'true')
@@ -36,6 +37,7 @@ export default function VideoPlayer({ posterURL, videoURL }) {
         <div className={styles.videoWrapper}>
 
             <video
+                controls
                 ref={landingVid}
                 onClick={handleVideoPlayerClick}
                 preload="auto"
