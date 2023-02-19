@@ -1,0 +1,51 @@
+.landingWrapper {}
+
+.landingContainer {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+    /* height: 100%; */
+}
+
+.landingBackground {
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: absolute;
+    z-index: 0;
+    opacity: .5;
+}
+
+
+.landingContentWrapper {
+    /* background-color: gray; */
+
+}
+
+.logoContainer {
+    height: 4rem;
+    /* background-color: gray; */
+}
+
+.logo {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.videoText {
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+}
+
+.callnowContainer {
+    margin-top: 1.2rem;
+    text-align: center;
+}
+
+.callnow_text {
+    font-size: 1.5rem;
+    font-family: 'Bebas Neue'
+}

@@ -1,0 +1,52 @@
+.learnMoreContainer {
+    /* height: 120rem; */
+    /* background-color: red; */
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: "Montserrat"
+}
+
+.learnMore_header {
+    margin-bottom: 1.3rem;
+    color: #53891b;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.ratFact {
+    margin-bottom: 1.5rem;
+}
+
+.ratFact_imgWrapper {
+    padding: 3px;
+    border: 1px solid #53891b;
+    float: left;
+    margin-right: .7rem;
+}
+
+.ratFact_img {
+    height: 7rem;
+    width: 5rem;
+    /* width:  auto; */
+    object-fit: cover;
+}
+
+.ratFact_header {
+    color: #53891b;
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+.ratFact_body {
+    font-size: .6rem;
+    color: #404040;
+}
+
+.learnMore_ctaWrapper {
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+.videoTextWrapper {
+    height: 3.5rem;
+    width: 100%;
+}
+
+
+
+.videoContainer {
+    height: 32rem;
+    /* background-color: red; */
+
+}
+
+.videoWrapper {
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.videoPlayer {
+    height: 25rem;
+    width: 14.0625rem;
+    /* height: 27rem;
+    width: 15.1875rem; */
+}
+
+.videoPlayButton {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 6rem;
+    width: auto;
+}
+
+.videoText {}

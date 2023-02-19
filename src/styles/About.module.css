@@ -1,0 +1,78 @@
+.aboutContainer {
+    /* height: 28rem; */
+    padding: 1rem;
+    padding-top: 1.75rem;
+    /* padding-bottom: 2rem; */
+    font-family: "Montserrat";
+    max-width: 500px;
+}
+
+
+
+
+.about_header {
+
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.about_header_emphasis {
+    font-style: italic;
+    color: #3ac210;
+}
+
+.about_subHeader {
+    margin-top: .7rem;
+}
+
+.about_subHeader1 {
+    font-size: .8rem;
+    font-weight: light;
+    color: gray
+}
+
+.about_subHeader2 {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+
+.about_ctaWrapper {
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    text-align: center;
+}
+
+.about_cta {
+    text-decoration: underline;
+    color: #53891b;
+    font-size: .8rem;
+    font-weight: bold;
+
+}
+
+
+.happyFamilyWrapper {
+    padding: 3px;
+    border: 1px solid #53891b;
+
+    /* display: inline-block; */
+    float: left;
+    margin-right: .7rem;
+}
+
+.happyFamily {
+    height: 7rem;
+    width: auto;
+    object-fit: cover;
+}
+
+/* .about_hr {
+    width: 100%;
+    height: 8px;
+    background-color: red;
+} */
+
+.about_bio {}

@@ -1,0 +1,32 @@
+.footer {
+    background-color: #8ED941;
+}
+
+.footer_logoWrapper {
+    height: 4rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.footer_logo {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer_list {
+    width: 100%;
+}
+
+/* .footer_listItem {} */
+
+.footer_link {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer_copyright {
+    color: black;
+    font-size: .6rem;
+    font-weight: light;
+}

@@ -1,0 +1,48 @@
+.button {
+    width: 100%;
+    background-color: #8ED941;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    height: 3rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+}
+
+.button:active {
+    background-color: #0b8015;
+}
+
+.buttonText {
+    margin-top: .1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+}
+
+
+
+.invertedButton {
+    background-color: white;
+    color: black;
+    width: 100%;
+    border-radius: 3px;
+    border: none;
+    height: 3rem;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    color: #53891b;
+}
+
+.invertedButton:active {
+    background-color: #8ED941;
+    color: black;
+}
+
+
+.invertedButtonText {
+    margin-top: .1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+}
