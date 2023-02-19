@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import Image from 'next/image'
 
+import ratThumbnail from '../../public/c911_ratLanding_thumbnail.png'
+
 import styles from '@/styles/VideoPlayer.module.css'
 
 import playButton from '../../public/playButton.png'
@@ -44,8 +46,8 @@ export default function VideoPlayer({ posterURL, videoURL }) {
                 playsInline
                 loop
                 className={styles.videoPlayer}
-                poster="/c911_ratlanding_thumbnail.png"
-            // poster={posterURL}
+                // poster="/c911_ratlanding_thumbnail.png"
+                poster={ratThumbnail}
             >
                 <source src={videoURL} type="video/mp4"></source>
                 Your browser does not support the video tag.
