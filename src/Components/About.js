@@ -12,6 +12,7 @@ export default function About() {
             <div className={`${styles.aboutContainer}`}>
                 <div className={styles.about_header}>
                     <span className={styles.about_header_emphasis}>FAST </span>
+                    &gt;&gt;&gt;
                     <br></br>
                     100% Effective Rat &<br></br>
                     Mouse Solutions
@@ -27,7 +28,7 @@ export default function About() {
                 </div>
 
                 <div className={styles.about_ctaWrapper}>
-                    <a className={styles.about_cta}>Don't Wait Call 407-719-6221</a>
+                    <a className={styles.about_cta}>Don&apos;t Wait Call 407-719-6221</a>
                 </div>
 
                 <hr className={styles.about_hr} />
