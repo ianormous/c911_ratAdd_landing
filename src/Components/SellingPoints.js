@@ -11,7 +11,7 @@ import styles from '@/styles/SellingPoints.module.css'
 export default function SellingPoints() {
     return (
         <div className={`${styles.prideContainer}`}>
-            <div className={styles.pride_header}>WE'RE BETTER</div>
+            <div className={styles.pride_header}>WE&apos;RE BETTER</div>
 
             <div className={styles.reasonContainer}>
                 <div className={styles.reasonGroupContainer}>
@@ -25,7 +25,7 @@ export default function SellingPoints() {
                 <div className={styles.reasonGroupContainer}>
                     <MilitaryTechIcon sx={{ fontSize: '4.5rem', marginBottom: '0rem' }} />
                     <div className={styles.reason_header}>BEAT ANY ESTIMATE BY 10%</div>
-                    <div className={styles.reason_body}>We never want to lose your business over price. Bring us any written estimate for the same work and we'll beat it by 10%</div>
+                    <div className={styles.reason_body}>We never want to lose your business over price. Bring us any written estimate for the same work and we&apos;ll beat it by 10%</div>
                 </div>
 
                 <div className={styles.reasonGroupContainer}>
