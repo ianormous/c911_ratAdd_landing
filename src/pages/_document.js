@@ -11,7 +11,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
-        {/* <NextScript /> */}
+        <NextScript />
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></Script>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></Script>
       </body>
