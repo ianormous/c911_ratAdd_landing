@@ -6,21 +6,27 @@
 
 
 .videoContainer {
-    height: 32rem;
+    /* position: relative; */
+    /* height: 32rem; */
     /* background-color: red; */
-
 }
+
 
 .videoWrapper {
     /* border: 1px solid red; */
     position: relative;
+    overflow: hidden;
+    height: 21.5rem;
+    width: 12.09375rem;
 }
 
 .videoPlayer {
-    height: 25rem;
-    width: 14.0625rem;
-    /* height: 27rem;
-    width: 15.1875rem; */
+    /* height: 25rem; */
+    /* width: 14.0625rem; */
+    /* height: 23rem;
+    width: 14.0625rem; */
+    height: 100%;
+    width: auto;
 }
 
 .videoPlayButton {
@@ -37,8 +43,10 @@
 .videoText {}
 
 .videoThumbnail {
-    height: 25rem;
-    width: 14.0625rem;
+    /* height: 25rem;
+    width: 14.0625rem; */
+    height: 100%;
+    width: auto;
     position: absolute;
     top: 0;
     bottom: 0;

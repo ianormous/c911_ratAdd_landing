@@ -27,38 +27,40 @@ export default function VideoPlayer({ posterURL, videoURL }) {
 
 
     return (
-        <div className={styles.videoWrapper}>
+        <div className={styles.videoContainer}>
+            <div className={styles.videoWrapper}>
+                <video
+                    controls
+                    ref={landingVid}
+                    onClick={handleVideoPlayerClick}
+                    preload="auto"
+                    playsInline
+                    loop
+                    className={styles.videoPlayer}
+                    // poster="/c911_ratlanding_thumbnail.png"
+                    poster={ratThumbnail}
+                >
+                    <source src={videoURL} type="video/mp4"></source>
+                    Your browser does not support the video tag.
+                </video>
+                {/* thumbnail sits in front to fix bug with poster attrb */}
+                <Image
+                    alt="video thumbnail. dogs chasing a rat"
+                    className={styles.videoThumbnail}
+                    ref={videoThumbnail}
+                    src={ratThumbnail}
+                    onClick={handlePlayBtnClick}
+                />
+                <Image
+                    alt=""
+                    className={styles.videoPlayButton}
+                    ref={videoPlayBtn}
+                    onClick={handlePlayBtnClick}
+                    src={playButton}
+                    id="playButton"
+                />
+            </div>
 
-            <video
-                controls
-                ref={landingVid}
-                onClick={handleVideoPlayerClick}
-                preload="auto"
-                playsInline
-                loop
-                className={styles.videoPlayer}
-                // poster="/c911_ratlanding_thumbnail.png"
-                poster={ratThumbnail}
-            >
-                <source src={videoURL} type="video/mp4"></source>
-                Your browser does not support the video tag.
-            </video>
-            {/* thumbnail sits in front to fix bug with poster attrb */}
-            <Image
-                alt="video thumbnail. dogs chasing a rat"
-                className={styles.videoThumbnail}
-                ref={videoThumbnail}
-                src={ratThumbnail}
-                onClick={handlePlayBtnClick}
-            />
-            <Image
-                alt=""
-                className={styles.videoPlayButton}
-                ref={videoPlayBtn}
-                onClick={handlePlayBtnClick}
-                src={playButton}
-                id="playButton"
-            />
         </div >
     )
 }

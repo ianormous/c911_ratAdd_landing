@@ -20,13 +20,17 @@
 
 .ratFact {
     margin-bottom: 1.5rem;
+    display: block;
+    /* height: min-content; */
 }
 
 .ratFact_imgWrapper {
     padding: 3px;
     border: 1px solid #53891b;
     float: left;
+    height: min-content;
     margin-right: .7rem;
+    clear: both;
 }
 
 .ratFact_img {

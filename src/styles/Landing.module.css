@@ -2,7 +2,7 @@
 
 .landingContainer {
     position: relative;
-    height: 40rem;
+    height: 33rem;
     width: 100%;
     /* height: 100%; */
 }
@@ -25,7 +25,7 @@
 }
 
 .logoContainer {
-    height: 4rem;
+    height: 3.5rem;
     /* background-color: gray; */
 }
 
@@ -35,17 +35,21 @@
     object-fit: cover;
 }
 
+.videoTextWrapper {
+    margin-top: -.4rem;
+}
+
 .videoText {
     font-family: 'Bebas Neue';
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .callnowContainer {
-    margin-top: 1.2rem;
+    margin-top: .4rem;
     text-align: center;
 }
 
 .callnow_text {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: 'Bebas Neue'
 }

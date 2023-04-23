@@ -56,16 +56,16 @@ export default function Home() {
 
 const ratFacts = [
   {
-    header: 'Fire Risk',
-    body: "Rodents, including rats & mice, instinctively gnaw on bjects like electricl wires. This causes expensive repairs and can cause electrical fires. It is estimated that a sebstantial number of fires start with exposed wireing caused by rats and mice",
-    img: fireRisk,
-    alt: "building on fire"
-  },
-  {
     header: 'Disease Risk',
     body: "Rats and mice make millions of people sick every year. Their dropping can spread diseases to humans, many of which can be fatal. Their feces dust, urine crystals, hair and dander. Rat skin cells cause asthma, allergies, inflammation and imminue deficiencies.",
     img: diseaseRisk,
     alt: "infestation fecal matter"
+  },
+  {
+    header: 'Fire Risk',
+    body: "Rodents, including rats & mice, instinctively gnaw on bjects like electricl wires. This causes expensive repairs and can cause electrical fires. It is estimated that a sebstantial number of fires start with exposed wireing caused by rats and mice",
+    img: fireRisk,
+    alt: "building on fire"
   },
   {
     header: 'AC Systems Damage Risk',

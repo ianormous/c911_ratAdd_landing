@@ -36,12 +36,14 @@ function Fact(props) {
     } = props
 
     return (
-        <div className={styles.ratFact}>
+        <div className={` ${styles.ratFact}`}>
             <div className={styles.ratFact_imgWrapper}>
                 <Image alt={alt} src={img} className={styles.ratFact_img} />
             </div>
-            <span className={styles.ratFact_header} >{header}</span>
-            <p>{body}</p>
+            <div>
+                <span className={styles.ratFact_header} >{header}</span>
+                <p>{body}</p>
+            </div>
         </div>
     )
 }
