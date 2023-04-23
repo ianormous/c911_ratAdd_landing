@@ -29,7 +29,7 @@ export default function Landing({
                     <div className={`d-flex flex-column align-items-center ${styles.videoContainer}`}>
                         {/* header */}
                         <div className={`d-flex align-items-center justify-content-center ${styles.videoTextWrapper}`}>
-                            <div className={`${styles.videoText}`}>You Want Them Gone Now</div>
+                            <div className={`${styles.videoText}`}>You Want Them Gone Now OH MY GAWD</div>
                         </div>
 
                         {/* video player */}
