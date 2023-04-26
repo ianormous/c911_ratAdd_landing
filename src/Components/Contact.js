@@ -5,7 +5,7 @@ import TextareaAutosize from 'react-textarea-autosize';
 
 import sx from '@/styles/Contact.module.css'
 
-console.log(NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
+console.log(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
 
 const SubmitButton = () => {
     return (
