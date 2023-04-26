@@ -28,7 +28,7 @@ export default function About() {
                 </div>
 
                 <div className={styles.about_ctaWrapper}>
-                    <a className={styles.about_cta}>Don&apos;t Wait Call 407-719-6221</a>
+                    <a href="tel:4077196221" className={styles.about_cta}>Don&apos;t Wait Call 407-719-6221</a>
                 </div>
 
                 <hr className={styles.about_hr} />

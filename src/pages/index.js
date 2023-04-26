@@ -6,6 +6,7 @@ import About from '../Components/About'
 import SellingPoints from '../Components/SellingPoints'
 import RatFacts from '../Components/MoreFacts'
 import Footer from '../Components/Footer'
+import Contact from '../Components/Contact'
 
 import ratBackground from '../../public/rat_background.png'
 import logo from '../../public/logo.png'
@@ -13,9 +14,9 @@ import logo from '../../public/logo.png'
 // RAT RISKS IMGS
 import fireRisk from '../../public/rat_risks/fire_risk.jpg'
 import parasiteRisk from '../../public/rat_risks/parasite_risk.png'
-import structureRisk from '../../public/rat_risks/chewed_pipe.jpg'
-import floodRisk from '../../public/rat_risks/floodRisk.jpg'
-import diseaseRisk from '../../public/rat_risks/diseaseRisk.jpg'
+import structureRisk from '../../public/rat_risks/chewed_pipe.png'
+import floodRisk from '../../public/rat_risks/floodRisk.png'
+import diseaseRisk from '../../public/rat_risks/diseaseRisk.png'
 import judgementRisk from '../../public/rat_risks/judgementRisk.jpg'
 import acRisk from '../../public/rat_risks/acRisk.jpg'
 
@@ -46,6 +47,7 @@ export default function Home() {
         <Landing {...landingProps} />
         <About />
         <SellingPoints />
+        <Contact />
         <RatFacts {...ratFactsProps} />
         <Footer />
       </main>
@@ -63,13 +65,13 @@ const ratFacts = [
   },
   {
     header: 'Fire Risk',
-    body: "Rodents, including rats & mice, instinctively gnaw on bjects like electricl wires. This causes expensive repairs and can cause electrical fires. It is estimated that a sebstantial number of fires start with exposed wireing caused by rats and mice",
+    body: "Rodents, including rats & mice, instinctively gnaw on bjects like electrical wires. This causes expensive repairs and can cause electrical fires. It is estimated that a sebstantial number of fires start with exposed wireing caused by rats and mice",
     img: fireRisk,
     alt: "building on fire"
   },
   {
     header: 'AC Systems Damage Risk',
-    body: "Rats & Mice chew into ducts. Once in they cayse your power bills to rise sharply and can destrouy your AC unit (avg. cost $6,000 - $8,000). An there is nothing worse than paying to cool your attic.",
+    body: "Rats & Mice chew into ducts. Once in they cayse your power bills to rise sharply and can destroy your AC unit (avg. cost $6,000 - $8,000). And there is nothing worse than paying to cool your attic.",
     img: acRisk,
     alt: "ac duct damage"
   },
@@ -87,13 +89,13 @@ const ratFacts = [
   },
   {
     header: 'Structural Damage Risk',
-    body: "Rodent teeth never stop growing and constnt gnawing and chewing is required to wear them down. While in your home or business, they are chewing on something. Roof shingle, flashing, drywall, supports, carpeting you name it, they don't diiscriminate.",
+    body: "Rodent teeth never stop growing and constant gnawing and chewing is required to wear them down. While in your home or business, they are chewing on something. Roof shingle, flashing, drywall, supports, carpeting you name it, they don't discriminate.",
     img: structureRisk,
     alt: "gnawed plumbing stack causing water damage"
   },
   {
     header: 'Parasites Risk',
-    body: "Rats & Mice bring fleas, ticks and mites (all of which are notorious vectors of disese transmission) with them. As rodents travel or die, they are depsoitiong fleas and ticks everywhereto wait for another live host to infect,. Which, in turn, can cause diseeases.",
+    body: "Rats & Mice bring fleas, ticks and mites (all of which are notorious vectors of disese transmission) with them. As rodents travel or die, they are depsoitiong fleas and ticks everywhereto wait for another live host to infect,. Which, in turn, can cause diseases.",
     img: parasiteRisk,
     alt: 'tick under microscope'
   }
