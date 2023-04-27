@@ -24,7 +24,7 @@ export default async (req, res) => {
         if (!success) {
             throw new Error('google recaptcha error')
         }
-
+        console.log('passes google verification')
 
         //validate user input
         const { err, value } = formVal.validate(req.body)
@@ -41,6 +41,7 @@ export default async (req, res) => {
                 <p><strong>Message:</strong> ${message}</p>
             `
         })
+        console.log('successfully sends email')
 
         res.status(200).json({ success: true })
     } catch (error) {
