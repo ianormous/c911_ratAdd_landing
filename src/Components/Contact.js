@@ -46,7 +46,7 @@ const Contact = () => {
         event.preventDefault()
 
         try {
-            recaptchaRef.current.execute();
+            // recaptchaRef.current.execute();
 
             const response = await fetch('/api/contact', {
                 method: 'POST',
@@ -143,13 +143,13 @@ const Contact = () => {
                                 placeholder="describe your critter problem"
                             />
                         </div>
-                        <ReCAPTCHA
+                        {/* <ReCAPTCHA
                             className={sx.recaptcha}
                             ref={recaptchaRef}
                             // size="invisible"
                             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                             onChange={onReCAPTCHAChange}
-                        />
+                        /> */}
 
                         <button
                             className={`d-flex justify-content-center align-item-center ${sx.button}`}

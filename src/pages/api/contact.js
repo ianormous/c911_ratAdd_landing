@@ -1,13 +1,19 @@
 import nodemailer from 'nodemailer'
 import joi from 'joi'
+const rateLimit = require("express-rate-limit");
 
 
 const recaptchVerifyURL = "https://www.google.com/recaptcha/api/siteverify"
 
 
+
+
 export default async (req, res) => {
     try {
         const { email, name, tel, message } = req.body
+
+        //ip address rate limiter
+
 
         //validate google recaptcha
         let googleRes = await fetch(`${recaptchVerifyURL}?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`, {
@@ -29,11 +35,11 @@ export default async (req, res) => {
             to: 'bugsandcritters@gmail.com',
             subject: 'potential customer from rat landing',
             html: `
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${tel}</p>
-        <p><strong>Message:</strong> ${message}</p>
-      `
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Phone:</strong> ${tel}</p>
+                <p><strong>Message:</strong> ${message}</p>
+            `
         })
 
         res.status(200).json({ success: true })
@@ -77,3 +83,10 @@ const formVal = joi.object({
         .min(2)
         .required()
 })
+
+//rate limiter
+const limiter = rateLimit({
+    windowMs: 60 * 1000, // 1 minute
+    max: 5, // limit each IP to 5 requests per windowMs
+    message: "Too many submissions from this IP, please try again later"
+});

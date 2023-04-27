@@ -1,17 +1,21 @@
 import React, { useRef } from 'react';
 import Head from 'next/head'
 
+import config from '../config'
+
 import Landing from '../Components/Landing'
 import About from '../Components/About'
 import SellingPoints from '../Components/SellingPoints'
-import RatFacts from '../Components/MoreFacts'
-import Footer from '../Components/Footer'
 import Contact from '../Components/Contact'
+import MoreFacts from '../Components/MoreFacts'
+import Footer from '../Components/Footer'
 
+//landing
+import thumbnail from '../../public/thumbnail.png'
 import ratBackground from '../../public/rat_background.png'
 import logo from '../../public/logo.png'
 
-// RAT RISKS IMGS
+// MORE FACTS IMGS
 import fireRisk from '../../public/rat_risks/fire_risk.jpg'
 import parasiteRisk from '../../public/rat_risks/parasite_risk.png'
 import structureRisk from '../../public/rat_risks/chewed_pipe.png'
@@ -20,84 +24,126 @@ import diseaseRisk from '../../public/rat_risks/diseaseRisk.png'
 import judgementRisk from '../../public/rat_risks/judgementRisk.jpg'
 import acRisk from '../../public/rat_risks/acRisk.jpg'
 
-import styles from '@/styles/Home.module.css'
-
 
 export default function Home() {
-  const landingProps = {
-    logo: logo,
-    background: ratBackground,
-    videoProps: {
-      videoURL: "/ratLanding_video.mp4",
-      posterURL: "/c911_ratlanding_thumbnail.png",
+    const landingProps = {
+        logo: logo,
+        background: ratBackground,
+        videoProps: {
+            videoURL: "/c911_general_ad_landing_video_v2.mp4",
+            posterURL: thumbnail,
+        },
+        header1: "You Want Them Gone Now",
+        header2: "affordable flat rate animal removal"
     }
-  }
 
-  const ratFactsProps = {
-    factsList: ratFacts
-  }
+    const moreFactsProps = {
+        factsList: ratFacts
+    }
+
+    const aboutProps = {
+        aboutText,
+    }
 
 
-  return (
-    <>
-      <Head>
-        <title>Critter 911 Rat Removal</title>
-      </Head>
-      <main>
-        <Landing {...landingProps} />
-        <About />
-        <SellingPoints />
-        <Contact />
-        <RatFacts {...ratFactsProps} />
-        <Footer />
-      </main>
-    </>
-  )
+    const footerProps = {
+        footerItems: [
+            {
+                text: "Visit our site",
+                link: "https://www.critter911.com"
+            },
+            {
+                text: "Learn More About Rats",
+                link: "https://www.critter911.com/rats"
+            },
+            {
+                text: "Learn More About Raccoons",
+                link: "https://critter911.com/raccoons-1"
+            },
+            {
+                text: "Learn More About Ducks",
+                link: "https://critter911.com/ducks-1"
+            },
+            {
+                text: "Learn More About Bats",
+                link: "https://critter911.com/bats-1"
+            }
+        ],
+        BOTTOM_TEXT: "Critter 911™",
+    }
+
+
+    return (
+        <>
+            <Head>
+                <title>Critter 911 Wildlife Removal</title>
+            </Head>
+            <main>
+                <Landing {...landingProps} />
+                <About  {...aboutProps} />
+                <SellingPoints />
+                {/* <Contact /> */}
+                <MoreFacts {...moreFactsProps} />
+                <Footer {...footerProps} />
+            </main>
+        </>
+    )
 }
 
 
+const aboutText = {
+    flash: "",
+    header: "",
+    subheader1: "Residential | Commercial | Multi Unit | Institutional",
+    subheader2: "Nuisance Wildlife Removal",
+    body: "Here at Orlando Critter 911 we understand! Nothing is more important to you than the health & safety of your family, home or business... Fact is that providing you with rat and wildlife free peace of mind is what we do best."
+}
+
+
+
+
 const ratFacts = [
-  {
-    header: 'Disease Risk',
-    body: "Rats and mice make millions of people sick every year. Their dropping can spread diseases to humans, many of which can be fatal. Their feces dust, urine crystals, hair and dander. Rat skin cells cause asthma, allergies, inflammation and imminue deficiencies.",
-    img: diseaseRisk,
-    alt: "infestation fecal matter"
-  },
-  {
-    header: 'Fire Risk',
-    body: "Rodents, including rats & mice, instinctively gnaw on bjects like electrical wires. This causes expensive repairs and can cause electrical fires. It is estimated that a sebstantial number of fires start with exposed wireing caused by rats and mice",
-    img: fireRisk,
-    alt: "building on fire"
-  },
-  {
-    header: 'AC Systems Damage Risk',
-    body: "Rats & Mice chew into ducts. Once in they cayse your power bills to rise sharply and can destroy your AC unit (avg. cost $6,000 - $8,000). And there is nothing worse than paying to cool your attic.",
-    img: acRisk,
-    alt: "ac duct damage"
-  },
-  {
-    header: 'Plumbing/Flooding Risk',
-    body: "Rodenets including rats & mice, cnnot dray water from the eat, they mut seek water sources to survive. They often locate plastic plymbing and ganw into them causeing significant amage and very costly repairs due to water flooding.",
-    img: floodRisk,
-    alt: "chewed pipe"
-  },
-  {
-    header: 'Social Jugement Risk',
-    body: "People fear rats and mice for good reason. They carry diseases, cause major amge to your property and they are just plain gross. No one wants to be the \"rat house\"",
-    img: judgementRisk,
-    alt: "disgusted woman"
-  },
-  {
-    header: 'Structural Damage Risk',
-    body: "Rodent teeth never stop growing and constant gnawing and chewing is required to wear them down. While in your home or business, they are chewing on something. Roof shingle, flashing, drywall, supports, carpeting you name it, they don't discriminate.",
-    img: structureRisk,
-    alt: "gnawed plumbing stack causing water damage"
-  },
-  {
-    header: 'Parasites Risk',
-    body: "Rats & Mice bring fleas, ticks and mites (all of which are notorious vectors of disese transmission) with them. As rodents travel or die, they are depsoitiong fleas and ticks everywhereto wait for another live host to infect,. Which, in turn, can cause diseases.",
-    img: parasiteRisk,
-    alt: 'tick under microscope'
-  }
+    {
+        header: 'Disease Risk',
+        body: "Wildlife infestations make millions of people sick every year. Animal dropping can spread diseases to humans, many of which can be fatal. Exposure to feces dust, urine crystals, hair and dander can cause asthma, allergies, inflammation and immune deficiencies.",
+        img: diseaseRisk,
+        alt: "infestation fecal matter"
+    },
+    {
+        header: 'Fire Risk',
+        body: "Rodents and other wildlife instinctively gnaw on objects like electricl wires. This causes expensive repairs and can cause electrical fires. It is estimated that a substantial number of fires start with exposed wireing caused by rats and mice",
+        img: fireRisk,
+        alt: "building on fire"
+    },
+    {
+        header: 'AC Systems Damage Risk',
+        body: "Animals love to chew and rip apart the soft, tearable material that makes  AC ducts. Holes in your AC Ducts cause your power bills to rise sharply and can outright destroy your AC unit (avg. cost $6,000 - $8,000). And there is nothing worse than paying to cool your attic.",
+        img: acRisk,
+        alt: "ac duct damage"
+    },
+    {
+        header: 'Plumbing/Flooding Risk',
+        body: "Animals are survivors. When thirsty they will gnaw into pipes in your attic to access water, causing a massive leak. This water damage can go unnoticed for weeks until it causes thousands of dollars of damage",
+        img: floodRisk,
+        alt: "chewed pipe"
+    },
+    {
+        header: 'Social Jugement Risk',
+        body: "People fear rodents and other types of infestations for good reason. They carry diseases, cause major damage to your property. They are are also just plain gross. No one wants to be the \"rat house\" or the \"raccoon hangout\",",
+        img: judgementRisk,
+        alt: "disgusted woman"
+    },
+    {
+        header: 'Structural Damage Risk',
+        body: "Animals are destructive to any structure they inhabit. While in your home or business, they are always gnawing on or breaking something. Roof shingle, flashing, drywall, supports, carpeting you name it, they don't discriminate",
+        img: structureRisk,
+        alt: "gnawed plumbing stack causing water damage"
+    },
+    {
+        header: 'Parasites Risk',
+        body: "Rodents and other animals bring fleas, ticks and mites (all of which are notorious vectors of disease transmission) with them. As rodents travel or die, they are depositing fleas and ticks everywhere to infect someone else. The black plague the caused so much destruction in medieval Europe was in-fact spread by rat fleas.",
+        img: parasiteRisk,
+        alt: 'tick under microscope'
+    }
 ]
 
