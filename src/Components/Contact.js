@@ -52,7 +52,7 @@ const Contact = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ name, email, message })
+                body: JSON.stringify({ name, email, tel, message })
             })
 
             if (response.ok) {
