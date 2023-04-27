@@ -1,4 +1,4 @@
-import { useState, useRef, createRef } from 'react'
+import { useState, useRef, createRef, useEffect } from 'react'
 import ReCAPTCHA from "react-google-recaptcha";
 import TextareaAutosize from 'react-textarea-autosize';
 
@@ -7,15 +7,7 @@ import sx from '@/styles/Contact.module.css'
 
 console.log(process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY)
 
-const SubmitButton = () => {
-    return (
-        <button
-            className={`d-flex justify-content-center align-item-center ${sx.button}`}
-        >
-            <div className={`${sx.buttonText}`}>Submit</div>
-        </button>
-    )
-}
+
 
 
 const Contact = () => {
@@ -25,7 +17,20 @@ const Contact = () => {
     const [message, setMessage] = useState('')
     const [success, setSuccess] = useState(false)
 
+    const [form, setForm] = useState({})
+
     const recaptchaRef = createRef();
+
+
+    // useEffect(()=>{
+    //     if(form.)
+    // },[form])
+
+    function onChange(e) {
+        const { name, value } = e.target
+        setForm({ ...form, [name]: value })
+    }
+
 
     const onReCAPTCHAChange = (captchaCode) => {
         // If the reCAPTCHA code is null or undefined indicating that
@@ -70,12 +75,12 @@ const Contact = () => {
     return (
         <div className={`d-flex flex-column align-items-center ${sx.container}`}>
             <div className={`${sx.contentWrapper}`}>
-                <h1 className={`${sx.header}`}>Tell Us About Your Rat Issue</h1>
                 {success ?
                     <p>Thanks for leaving a message! We will be reaching out soon!</p>
                     :
                     // <form onSubmit={handleSubmit} className={`d-flex flex-column ${sx.form}`}>
                     <form onSubmit={handleSubmit}>
+                        <h1 className={`${sx.header}`}>Tell Us About Your Rat Issue</h1>
                         <div>
                             {/* <label className={`${sx.label}`} htmlFor="name">Name:</label> */}
                             <input
@@ -118,18 +123,6 @@ const Contact = () => {
                                 placeholder="email"
                             />
                         </div>
-                        {/* <div>
-                            <label className={`${sx.label}`} htmlFor="message">Message:</label>
-                            <textarea
-                                rows="2"
-                                className={`${sx.input}`}
-                                id="message" name="message"
-                                value={message}
-                                onChange={(event) => setMessage(event.target.value)}
-                                required
-                                placeholder="describe your critter problem"
-                            />
-                        </div> */}
                         <div>
                             {/* <label className={`${sx.label}`} htmlFor="message">Message:</label> */}
                             <TextareaAutosize
@@ -143,13 +136,13 @@ const Contact = () => {
                                 placeholder="describe your critter problem"
                             />
                         </div>
-                        {/* <ReCAPTCHA
+                        <ReCAPTCHA
                             className={sx.recaptcha}
                             ref={recaptchaRef}
                             // size="invisible"
                             sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                             onChange={onReCAPTCHAChange}
-                        /> */}
+                        />
 
                         <button
                             className={`d-flex justify-content-center align-item-center ${sx.button}`}
