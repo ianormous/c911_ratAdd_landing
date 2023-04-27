@@ -10,7 +10,7 @@ const recaptchVerifyURL = "https://www.google.com/recaptcha/api/siteverify"
 
 export default async (req, res) => {
     try {
-        const { email, name, tel, message } = req.body
+        const { email, name, tel, message, token } = req.body
 
         //ip address rate limiter
 
@@ -19,7 +19,7 @@ export default async (req, res) => {
         let googleRes = await fetch(`${recaptchVerifyURL}?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`, {
             method: "POST",
         });
-        googleRes = googleRes.json()
+        googleRes = await googleRes.json()
         const { success } = googleRes
         if (!success) {
             throw new Error('google recaptcha error')
