@@ -16,6 +16,7 @@ const Contact = () => {
     const [tel, setTel] = useState('')
     const [message, setMessage] = useState('')
     const [success, setSuccess] = useState(false)
+    const [token, setToken] = useState('')
 
     const [form, setForm] = useState({})
 
@@ -38,6 +39,8 @@ const Contact = () => {
         if (!captchaCode) {
             return;
         }
+
+        setToken(captchaCode)
     }
 
 
@@ -52,7 +55,7 @@ const Contact = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ name, email, tel, message })
+                body: JSON.stringify({ name, email, tel, message, token })
             })
 
             if (response.ok) {
