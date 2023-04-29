@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Script from 'next/script'
+// import ogImage from '../../public/og_img.jpg'
 
 // import sitePreview  from '../../public/sitePreview.png'
 
@@ -13,7 +14,8 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <meta property="og:title" content="Critter 911 Rat & Animal Solutions" />
         <meta property="og:description" content="Animal removal cheapest price garuntee" />
-        <meta property="og:image" content="https://example.com/image.jpg" />
+        {/* <meta property="og:image" content={ogImage} /> */}
+        <meta property="og:image" content="/public/og_img" />
         <meta property="og:url" content="https://example.com/" />
         <meta property="og:type" content="website" />
       </Head>

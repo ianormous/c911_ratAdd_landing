@@ -14,8 +14,10 @@ import Contact from '../Components/Contact'
 import ratBackground from '../../public/rat_background.png'
 import logo from '../../public/logo.png'
 
+
 // RAT RISKS IMGS
 import fireRisk from '../../public/rat_risks/fire_risk.jpg'
+
 import parasiteRisk from '../../public/rat_risks/parasite_risk.png'
 import structureRisk from '../../public/rat_risks/chewed_pipe.png'
 import floodRisk from '../../public/rat_risks/floodRisk.png'
