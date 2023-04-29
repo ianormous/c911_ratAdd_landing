@@ -15,7 +15,7 @@ export default function Document() {
         <meta property="og:title" content="Critter 911 Rat & Animal Solutions" />
         <meta property="og:description" content="Animal removal cheapest price garuntee" />
         {/* <meta property="og:image" content={ogImage} /> */}
-        <meta property="og:image" content="/public/og_img" />
+        <meta property="og:image" content="public/og_img" />
         <meta property="og:url" content="https://example.com/" />
         <meta property="og:type" content="website" />
       </Head>
