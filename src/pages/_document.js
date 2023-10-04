@@ -22,6 +22,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        <Script src="https://www.google.com/recaptcha/api.js"></Script>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></Script>
         <Script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></Script>
       </body>

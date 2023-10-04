@@ -100,9 +100,9 @@
 
 
 .recaptchaContainer {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
     height: 5rem;
     width: 100%;
 
@@ -111,7 +111,7 @@
 }
 
 .recaptcha {
-    width: 100%;
+    /* width: 100%; */
     /* border: 1px solid red; */
     margin-bottom: .6rem;
     max-width: 100%;
@@ -123,4 +123,25 @@
 .testInput {
     border: none;
     border-bottom: 1px solid #8ED941
+}
+
+
+
+
+@media(max-width: 1024px) {
+
+    /* .hideOnTablet {
+        display: none;
+    } */
+    .container {
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media(max-width:480px) {
+    /* .hideOnMobile {
+        display: none;
+    } */
 }

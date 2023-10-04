@@ -23,15 +23,15 @@ const Contact = () => {
     const recaptchaRef = createRef();
 
 
-    useLayoutEffect(() => {
-        const recaptcha = recaptchaRef.current
-        if (recaptcha) {
-            recaptcha.style = { maxWidth: "100%", width: 'rem' }
-            const iframe = recaptcha.querySelectorAll('iframe')
-            iframe.style.width = '3rem'
+    // useLayoutEffect(() => {
+    //     const recaptcha = recaptchaRef.current
+    //     if (recaptcha) {
+    //         recaptcha.style = { maxWidth: "100%", width: 'rem' }
+    //         const iframe = recaptcha.querySelectorAll('iframe')
+    //         iframe.style.width = '3rem'
 
-        }
-    }, [recaptchaRef])
+    //     }
+    // }, [recaptchaRef])
 
     function onChange(e) {
         const { name, value } = e.target
@@ -148,6 +148,7 @@ const Contact = () => {
                                 sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                                 onChange={onReCAPTCHAChange}
                             />
+                            {/* <div className="g-recaptcha" data-sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}></div> */}
                         </div>
 
                         <button
