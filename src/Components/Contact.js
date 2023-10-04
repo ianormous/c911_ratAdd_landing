@@ -120,7 +120,6 @@ const Contact = () => {
                                 placeholder="email"
                             />
                         </div>
-                        <div>
                             {/* <label className={`${sx.label}`} htmlFor="message">Message:</label> */}
                             <TextareaAutosize
                                 maxRows={4}
@@ -151,7 +150,7 @@ const Contact = () => {
                     </form>
 
                 }
-            </div>
+        </div>
         </div >
 
     )
