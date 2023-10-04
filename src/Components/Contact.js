@@ -24,8 +24,12 @@ const Contact = () => {
 
 
     useLayoutEffect(() => {
-        if (recaptchaRef.current) {
-            recaptchaRef.current.style = { maxWidth: "100%", width: 'rem' }
+        const recaptcha = recaptchaRef.current
+        if (recaptcha) {
+            recaptcha.style = { maxWidth: "100%", width: 'rem' }
+            const iframe = recaptcha.querySelectorAll('iframe')
+            iframe.style.width = '3rem'
+
         }
     }, [recaptchaRef])
 
