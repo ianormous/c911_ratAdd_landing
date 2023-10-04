@@ -23,9 +23,11 @@ const Contact = () => {
     const recaptchaRef = createRef();
 
 
-    // useEffect(()=>{
-    //     if(form.)
-    // },[form])
+    useLayoutEffect(() => {
+        if (recaptchaRef.current) {
+            recaptchaRef.current.style = { maxWidth: "100%" }
+        }
+    }, [recaptchaRef])
 
     function onChange(e) {
         const { name, value } = e.target
@@ -136,8 +138,6 @@ const Contact = () => {
                         <div className={sx.recaptchaContainer}>
                             <ReCAPTCHA
                                 size='comapact'
-                                width={'100%'}
-                                style={{ width: '3rem' }}
                                 className={sx.recaptcha}
                                 ref={recaptchaRef}
                                 // size="invisible"
