@@ -135,6 +135,8 @@ const Contact = () => {
                         </div>
                         <div className={sx.recaptchaContainer}>
                             <ReCAPTCHA
+                                size='comapact'
+                                width={'100%'}
                                 style={{ width: '100%' }}
                                 className={sx.recaptcha}
                                 ref={recaptchaRef}
