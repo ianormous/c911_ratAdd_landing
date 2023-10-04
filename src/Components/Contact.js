@@ -133,13 +133,15 @@ const Contact = () => {
                                 placeholder="describe your critter problem"
                             />
                         </div>
-                        <ReCAPTCHA
-                            className={sx.recaptcha}
-                            ref={recaptchaRef}
-                            // size="invisible"
-                            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                            onChange={onReCAPTCHAChange}
-                        />
+                        <div className={sx.recaptchaContainer}>
+                            <ReCAPTCHA
+                                className={sx.recaptcha}
+                                ref={recaptchaRef}
+                                // size="invisible"
+                                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+                                onChange={onReCAPTCHAChange}
+                            />
+                        </div>
 
                         <button
                             className={`d-flex justify-content-center align-item-center ${sx.button}`}
