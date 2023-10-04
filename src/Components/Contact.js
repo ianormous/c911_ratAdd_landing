@@ -25,7 +25,7 @@ const Contact = () => {
 
     useLayoutEffect(() => {
         if (recaptchaRef.current) {
-            recaptchaRef.current.style = { maxWidth: "100%" }
+            recaptchaRef.current.style = { maxWidth: "100%", width: 'rem' }
         }
     }, [recaptchaRef])
 
