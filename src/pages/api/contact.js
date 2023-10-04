@@ -6,8 +6,6 @@ const rateLimit = require("express-rate-limit");
 const recaptchVerifyURL = "https://www.google.com/recaptcha/api/siteverify"
 
 
-
-
 export default async (req, res) => {
     try {
         const { email, name, tel, message, token } = req.body
