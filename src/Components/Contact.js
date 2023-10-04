@@ -137,7 +137,7 @@ const Contact = () => {
                             <ReCAPTCHA
                                 size='comapact'
                                 width={'100%'}
-                                style={{ width: '100%' }}
+                                style={{ width: '3rem' }}
                                 className={sx.recaptcha}
                                 ref={recaptchaRef}
                                 // size="invisible"
