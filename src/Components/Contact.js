@@ -120,6 +120,7 @@ const Contact = () => {
                                 placeholder="email"
                             />
                         </div>
+                        <div>
                             {/* <label className={`${sx.label}`} htmlFor="message">Message:</label> */}
                             <TextareaAutosize
                                 maxRows={4}
@@ -134,6 +135,7 @@ const Contact = () => {
                         </div>
                         <div className={sx.recaptchaContainer}>
                             <ReCAPTCHA
+                                style={{ width: '100%' }}
                                 className={sx.recaptcha}
                                 ref={recaptchaRef}
                                 // size="invisible"
@@ -150,7 +152,7 @@ const Contact = () => {
                     </form>
 
                 }
-        </div>
+            </div>
         </div >
 
     )
